@@ -1,0 +1,160 @@
+*{
+  margin: 0;
+  padding: 0;
+}
+body {
+  color: white;
+  background: #303030;
+  font-family: Arial, sans-serif;
+  background: #303030 url(mountain_Lake.png) no-repeat center center;
+  background-size: cover;
+}
+.background {
+  height: 100vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.container {
+  text-align: center;
+}
+
+.search-bar {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  margin-bottom: 20px;
+}
+
+.search-bar form {
+  position: relative;
+}
+
+.search-bar input {
+  color: white;
+  padding: 10px 40px 10px 60px;
+  width: 400px;
+  border: 2px solid #8f8f8f;
+  background: #303030;
+  border-radius: 24px;
+  font-size: 16px;
+  outline: none;
+}
+
+.search-bar button {
+  position: absolute;
+  top: 50%;
+  right: 10px;
+  transform: translateY(-50%);
+  padding: 8px;
+  background-color: transparent;
+  border: none;
+  cursor: pointer;
+}
+.input-container {
+  position: relative;
+  display: inline-block;
+}
+.image-before-placeholder {
+  position: absolute;
+  width: 16px;
+  height: 16px;
+  top: 50%;
+  left: 10px;
+  transform: translateY(-50%) translateX(75%);
+}
+.search-bar button img {
+  width: 16px;
+  height: 16px;
+  vertical-align: middle;
+}
+
+.search-bar button:focus {
+  outline: none;
+}
+
+@media only screen and (min-width: 800px) {
+  .links a {
+    flex: 1 0 calc(33% - 20px);
+  }
+}
+
+/* links */
+.links-container {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+  max-width: 800px;
+  margin: 0 auto;
+}
+
+.link {
+  flex-basis: calc(33.33% - 20px);
+  background-color: #303030;
+  padding: 10px;
+  margin-bottom: 20px;
+  text-decoration: none;
+  color: #fff;
+  transition: background-color 0.3s ease;
+  display: flex;
+  align-items: center;
+}
+
+.link:hover {
+  background-color: #262626;
+}
+
+.link img {
+  width: 32px;
+  height: 32px;
+  margin-right: 10px;
+}
+
+.link-info {
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-start;
+}
+
+.link-title {
+  font-weight: bold;
+  text-align: left;
+}
+
+.link-description {
+  color: #fff;
+  text-align: left;
+}
+
+/* Other */
+
+.size-01{
+  font-size: 18px;
+}
+.no-decorations{
+  text-decoration: none;
+}
+.padding_01{
+  padding: 20px 20px;
+}
+.same-line{
+  display: flex;
+  align-items: center;
+}
+.color-white{
+  color: white;
+}
+
+nav{
+  height: 50px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-wrap: wrap;
+  padding: 40px 40px;
+  background-color: #2626268f;
+}
+.no-decorations{
+  text-decoration: none;
+}

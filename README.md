@@ -5,6 +5,6 @@ But We're unable to provide the icons for all of the links we apologize for it a
 
 and we don't have any rights to use these icons and 
 we would not like to take any profit from it and anyone can use it
-and it's for person use only, not for any kind of bussiness or something
+and it's for person use only
 
 Have a Good Day!

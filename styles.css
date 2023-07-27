@@ -1,3 +1,6 @@
+/*===============================================================================================================                                             Large Containers 
+===============================================================================================================*/
+
 *{
   margin: 0;
   padding: 0;
@@ -6,9 +9,20 @@ body {
   color: white;
   background: #303030;
   font-family: Arial, sans-serif;
-  background: #303030 url(mountain_Lake.png) no-repeat center center;
+  background: #303030 url(Images/mountain\ Lake.png) no-repeat center center;
   background-size: cover;
 }
+
+nav{
+  height: 50px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-wrap: wrap;
+  padding: 40px 40px;
+  background-color: #2626268f;
+}
+
 .background {
   height: 100vh;
   display: flex;
@@ -19,6 +33,9 @@ body {
 .container {
   text-align: center;
 }
+
+/*===============================================================================================================                                                 Search Bar 
+===============================================================================================================*/
 
 .search-bar {
   display: flex;
@@ -74,19 +91,22 @@ body {
   outline: none;
 }
 
-@media only screen and (min-width: 800px) {
-  .links a {
-    flex: 1 0 calc(33% - 20px);
-  }
-}
+/*===============================================================================================================                                                     links 
+===============================================================================================================*/
 
-/* links */
 .links-container {
   display: flex;
   flex-wrap: wrap;
   justify-content: space-between;
   max-width: 800px;
   margin: 0 auto;
+}
+
+
+@media only screen and (min-width: 800px) {
+  .links a {
+    flex: 1 0 calc(33% - 20px);
+  }
 }
 
 .link {
@@ -127,7 +147,8 @@ body {
   text-align: left;
 }
 
-/* Other */
+/*===============================================================================================================                                          Styles according to Names
+================================================================================================================*/
 
 .size-01{
   font-size: 18px;
@@ -146,15 +167,38 @@ body {
   color: white;
 }
 
-nav{
-  height: 50px;
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  flex-wrap: wrap;
-  padding: 40px 40px;
-  background-color: #2626268f;
-}
 .no-decorations{
   text-decoration: none;
+}
+/*===============================================================================================================                                                Other...
+================================================================================================================*/
+i{
+  height: 30px;
+  width: 30px;
+}
+#reload-script{
+
+  height: 70px;
+  width: 130px;
+
+  color: white;
+  background-color: #00af00;
+
+  font-size: large;
+
+  border-radius: 20px;
+  border-color: #303030;
+  border-style: solid;
+
+  transition-property: all;
+  transition-duration: 0.2s;
+  transition-timing-function: ease-in;
+}
+
+#reload-script:hover{
+  background-color: #003a00be;
+  border-radius: 10px;
+  transition-property: all;
+  transition-duration: 0.2s;
+  transition-timing-function: ease-in;
 }

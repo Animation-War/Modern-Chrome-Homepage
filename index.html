@@ -1,19 +1,23 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>Google</title>
-  <link rel="icon" href="https://www.google.com/images/branding/googleg/1x/googleg_standard_color_128dp.png"></link>
+
+  <link rel="icon" href="https://www.google.com/images/branding/googleg/1x/googleg_standard_color_128dp.png">
+  </link>
   <link rel="stylesheet" href="styles.css">
 </head>
+
 <body>
   <header>
     <nav>
       <ul class="same-line">
         <li class="no-decorations">
           <a href="https://www.google.com" class="color-white same-line">
-            <img src="google_logo.svg" alt="Logo" id="logo" class="padding_01 no-decorations" width="150">
+            <img src="Images/icons/logos/google_logo.svg" alt="Logo" id="logo" class="padding_01 no-decorations" width="150">
           </a>
         </li>
         <div class="no-decorations">
@@ -21,6 +25,8 @@
           <a href="/about.html" class="padding_01 size-01 no-decorations"><b class="color-white">About</b></a>
           <a href="/contact.html" class="padding_01 size-01 no-decorations"><b class="color-white">Contact</b></a>
           <a href="/support.html" class="padding_01 size-01 no-decorations"><b class="color-white">Support</b></a>
+          <button id="reload-script" onclick="runScriptAgain()">Run Script Again</button>
+          <audio id="button-sound" src="Notification bell.wav"></audio>
         </div>
       </ul>
     </nav>
@@ -33,74 +39,75 @@
             <div class="search-bar">
               <form action="https://www.google.com/search" method="GET" target="_blank">
                 <div class="input-container">
-                  <img src="https://www.google.com/images/branding/googleg/1x/googleg_standard_color_128dp.png" alt="" class="image-before-placeholder">
+                  <img src="https://www.google.com/images/branding/googleg/1x/googleg_standard_color_128dp.png" alt=""
+                    class="image-before-placeholder">
                   <input type="text" name="q" placeholder="Search with Google" required>
                   <button type="submit" aria-label="Search">
-                    <img src="magnifying_glass.png" alt="Magnifying Glass Icon">
+                    <img src="Images/icons/magnifying_glass.png" alt="">
                   </button>
                 </div>
-              </form>              
-            </div>            
+              </form>
+            </div>
             <div class="links-section">
               <div class="links-container">
                 <a href="https://www.youtube.com" target="_blank" class="link">
-                  <img src="youtube_icon.png" alt="YouTube Icon">
+                  <img src="Images/icons/logos/youtube_icon.png" alt="YouTube Icon">
                   <div class="link-info">
                     <span class="link-title">YouTube</span>
                     <span class="link-description">Share and watch videos</span>
                   </div>
                 </a>
                 <a href="https://github.com" target="_blank" class="link">
-                  <img src="github_icon.png" alt="GitHub Icon">
+                  <img src="Images/icons/logos/github_icon.png" alt="GitHub Icon">
                   <div class="link-info">
                     <span class="link-title">GitHub</span>
                     <span class="link-description">Collaboration platform for developers</span>
                   </div>
                 </a>
                 <a href="https://www.gmail.com" target="_blank" class="link">
-                  <img src="gmail_icon.png" alt="Gmail Icon">
+                  <img src="Images/icons/logos/gmail_icon.png" alt="Gmail Icon">
                   <div class="link-info">
                     <span class="link-title">Gmail</span>
                     <span class="link-description">Email by Google</span>
                   </div>
                 </a>
                 <a href="https://repl.it" target="_blank" class="link">
-                  <img src="replit_icon.png" alt="Replit Icon">
+                  <img src="Images/icons/logos/replit_icon.png" alt="Replit Icon">
                   <div class="link-info">
                     <span class="link-title">Replit</span>
                     <span class="link-description">Code and share your projects</span>
                   </div>
                 </a>
                 <a href="https://www.spotify.com" target="_blank" class="link">
-                  <img src="spotify_icon.png" alt="Spotify Icon">
+                  <img src="Images/icons/logos/spotify_icon.png" alt="Spotify Icon">
                   <div class="link-info">
                     <span class="link-title">Spotify</span>
                     <span class="link-description">Music streaming platform</span>
                   </div>
                 </a>
                 <a href="https://chat.openai.com" target="_blank" class="link">
-                  <img src="chatgpt_icon.png" alt="ChatGPT Icon">
+                  <img src="Images/icons/logos/chatgpt_icon.png" alt="ChatGPT Icon">
                   <div class="link-info">
                     <span class="link-title">ChatGPT</span>
                     <span class="link-description">Conversational AI</span>
                   </div>
                 </a>
                 <a href="https://www.bard.com" target="_blank" class="link">
-                  <img src="bard_icon.png" alt="Bard Icon">
+                  <img src="Images/icons/logos/bard_icon.png" alt="Bard Icon">
                   <div class="link-info">
                     <span class="link-title">Bard</span>
                     <span class="link-description">Platform for writers</span>
                   </div>
                 </a>
                 <a href="https://discord.com" target="_blank" class="link">
-                  <img src="discord_icon.png" alt="Discord Icon">
+                  <img src="Images/icons/logos/discord_icon.png" alt="Discord Icon">
                   <div class="link-info">
                     <span class="link-title">Discord</span>
                     <span class="link-description">Chat for communities and friends</span>
                   </div>
                 </a>
                 <a href="https://www.virustotal.com/" target="_blank" class="link">
-                  <img src="virustotal_icon.png" alt="Discord Icon">
+                  <img src="Images/icons/logos/virustotal_icon.png" alt="Discord Icon">
                   <div class="link-info">
                     <span class="link-title">Virus Total</span>
                     <span class="link-description">Scan files and URLs for potential malware</span>
@@ -108,11 +115,11 @@
                 </a>
               </div>
             </div>
-            
           </div>
         </div>
       </article>
     </section>
   </main>
+  <script src="script.js"></script>
 </body>
 </html>
